@@ -1,9 +1,13 @@
 import './styles/style.css';
 import Navbar from './components/navbar'
+import Home from "./components/home";
 
 function App() {
   return (
-    <Navbar />
+      <div>
+        <Navbar />
+        <Home />
+      </div>
   );
 }
 
