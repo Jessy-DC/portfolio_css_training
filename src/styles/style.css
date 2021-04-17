@@ -7,6 +7,7 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
   height: 100vh;
+  width: 100%;
 }
 
 .navbar {
@@ -19,21 +20,67 @@ body {
   position: fixed;
   z-index: 100;
 }
-.navbar .contItems {
+
+.contItems {
   font-size: 22px;
   height: 100%;
   display: flex;
   align-items: center;
 }
-.navbar .contItems .items {
+
+.items {
   margin-right: 30px;
   text-decoration: none;
   color: black;
 }
-.navbar .contItems .items:hover {
+
+.items:hover {
   color: #5f5f5f;
 }
 
+.logoMenuImg {
+  width: 30px;
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 13px;
+}
+
+.imgResize {
+  width: 30px;
+  top: 5px;
+}
+
+@media screen and (min-width: 700px) {
+  .logoMenuImg {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .navbar {
+    display: block;
+    border-top: 1px solid black;
+  }
+  .navbar .contItems {
+    display: none;
+  }
+  .navbar .contItems .items {
+    background: #f5f5f5;
+    margin-right: 0;
+    padding: 10px 20px;
+    display: block;
+  }
+  .navbar .contItems .items:nth-child(1) {
+    padding-top: 20px;
+  }
+  .navbar .logoMenuImg {
+    display: block;
+  }
+  .navbar .responsive {
+    display: block;
+    margin-top: 50px;
+  }
+}
 .home {
   height: 800px;
   width: 100%;

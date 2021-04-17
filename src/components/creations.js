@@ -3,7 +3,7 @@ import FlexImgPorfolio from "./flexImgPorfolio";
 
 export default function Creations() {
     return (
-        <div className="portFolioImage">
+        <div id={"creations"} className="portFolioImage">
             <FlexImgPorfolio />
         </div>
     )

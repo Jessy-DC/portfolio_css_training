@@ -16,6 +16,7 @@ body {
   padding: 0;
   font-family: 'Poppins', sans-serif;
   height: 100vh;
+  width: 100%;
 }
 
 .navbar {
@@ -26,24 +27,78 @@ body {
   border-bottom: 1px solid black;
   position: fixed;
   z-index: 100;
+}
 
-  .contItems {
-    font-size: 22px;
-    height: 100%;
-    display: flex;
-    align-items: center;
+.contItems {
+  font-size: 22px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 
-    .items {
-      margin-right: 30px;
-      text-decoration: none;
-      color: black;
+.items {
+  margin-right: 30px;
+  text-decoration: none;
+  color: black;
+}
 
-      &:hover {
-        color: #5f5f5f;
-      }
-    }
+.items:hover {
+  color: #5f5f5f;
+}
+
+.logoMenuImg {
+  width: 30px;
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 13px;
+
+}
+
+.imgResize {
+  width: 30px;
+  top: 5px;
+}
+
+@media screen and (min-width: 700px) {
+
+  .logoMenuImg {
+    display: none;
   }
 }
+
+@media screen and (max-width: 700px){
+    .navbar {
+      display: block;
+      border-top: 1px solid black;
+
+      .contItems {
+        display: none;
+
+        .items {
+          background: $whiteGray;
+          margin-right: 0;
+          padding: 10px 20px;
+          display: block;
+
+          &:nth-child(1) {
+            padding-top: 20px;
+          }
+        }
+      }
+
+      .logoMenuImg {
+        display: block;
+      }
+
+      .responsive {
+        display: block;
+        margin-top: 50px;
+      }
+    }
+}
+
+// Home
 
 .home {
   height: 800px;
