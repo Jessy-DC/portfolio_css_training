@@ -5,6 +5,8 @@ import SectionTxtImage from "./components/sectionTxtImage";
 import H2 from "./components/H2";
 import Creations from "./components/creations";
 import ParaScroll from "./components/paraScroll";
+import Form from "./components/UI-form/form";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -17,6 +19,10 @@ function App() {
           <hr className="divPort" />
           <Creations />
           <ParaScroll />
+          <H2 class="titleForm">You can contact me !</H2>
+          <Form />
+          <br /><br /><br /><br /><br />
+          <Footer />
       </div>
   );
 }

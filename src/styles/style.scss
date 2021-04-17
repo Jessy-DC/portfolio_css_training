@@ -259,3 +259,58 @@ body {
     letter-spacing: 5px;
   }
 }
+
+//Form
+
+.titleForm {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.formContact {
+  width: 100%;
+  @include flexCenterX;
+
+  form {
+    width: 60%;
+
+    .row {
+      width: 100%;
+
+      input, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+      }
+      textarea {
+        height: 150px;
+      }
+
+      .subBtn {
+        width: 30%;
+        margin: 0 auto;
+        display: block;
+        margin-top: 10px;
+        cursor: pointer;
+        text-align: center;
+        transition: all 0.2s ease;
+
+        &:hover {
+          background: midnightblue;
+          color: $whiteBroke;
+        }
+      }
+    }
+
+    .row:nth-child(2), .row:nth-child(3) {
+        margin-top: 30px;
+    }
+  }
+}
+
+//Footer
+
+footer {
+  @include flexCenterX;
+  border-top: 1px dashed $dark;
+}

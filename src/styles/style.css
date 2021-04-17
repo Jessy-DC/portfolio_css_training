@@ -220,4 +220,51 @@ body {
   letter-spacing: 5px;
 }
 
+.titleForm {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.formContact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.formContact form {
+  width: 60%;
+}
+.formContact form .row {
+  width: 100%;
+}
+.formContact form .row input, .formContact form .row textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+.formContact form .row textarea {
+  height: 150px;
+}
+.formContact form .row .subBtn {
+  width: 30%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+.formContact form .row .subBtn:hover {
+  background: midnightblue;
+  color: #f1f1f1;
+}
+.formContact form .row:nth-child(2), .formContact form .row:nth-child(3) {
+  margin-top: 30px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  border-top: 1px dashed #333;
+}
+
 /*# sourceMappingURL=style.css.map */
