@@ -94,5 +94,74 @@ body {
     font-size: 16px;
   }
 }
+.titleSec1 {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+.txtImage {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px dashed lightblue;
+}
+.txtImage .flexContainerSection1 {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+}
+.txtImage .flexContainerSection1 .contImgSec1 {
+  width: 45%;
+  margin: 20px;
+}
+.txtImage .flexContainerSection1 .contImgSec1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+.txtImage .flexContainerSection1 .contTxtSec1 {
+  width: 45%;
+  background: azure;
+  margin: 20px;
+  border-radius: 2px;
+}
+.txtImage .flexContainerSection1 .contTxtSec1 h2 {
+  text-align: center;
+  font-size: 35px;
+}
+.txtImage .flexContainerSection1 .contTxtSec1 .subtitleSec1 {
+  text-align: center;
+}
+.txtImage .flexContainerSection1 .contTxtSec1 hr {
+  width: 60px;
+}
+.txtImage .flexContainerSection1 .contTxtSec1 .txtSec1 {
+  font-size: 19px;
+  padding: 15px;
+}
+.txtImage .flexContainerSection1 .contTxtSec1 .txtSec1::first-letter {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .txtImage .flexContainerSection1 {
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+  }
+  .txtImage .flexContainerSection1 .contImgSec1 {
+    width: 100%;
+  }
+  .txtImage .flexContainerSection1 .contTxtSec1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .titleSec1 {
+    font-size: 25px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
