@@ -4,6 +4,7 @@ import Home from "./components/home";
 import SectionTxtImage from "./components/sectionTxtImage";
 import H2 from "./components/H2";
 import Creations from "./components/creations";
+import ParaScroll from "./components/paraScroll";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <H2 class="titlePortfolio">Lorem ipsum dolor sit amet.</H2>
           <hr className="divPort" />
           <Creations />
+          <ParaScroll />
       </div>
   );
 }
