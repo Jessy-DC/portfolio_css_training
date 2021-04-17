@@ -1,9 +1,10 @@
 import React from "react";
+import H2 from "./H2";
 
 export default function ContainerTxtSection1() {
     return (
         <div className="contTxtSec1">
-            <h2>Lorem ipsum.</h2>
+            <H2>Lorem ipsum.</H2>
             <p className="subtitleSec1">Lorem ipsum dolor sit amet.</p>
             <p className="txtSec1">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aspernatur cumque

@@ -163,5 +163,43 @@ body {
     font-size: 25px;
   }
 }
+.titlePortfolio {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 550px) {
+  .titlePortfolio {
+    font-size: 25px;
+  }
+}
+.divPort {
+  width: 20%;
+}
+
+.portFolioImage {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+.portFolioImage .flexImgPortfolio {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.portFolioImage .flexImgPortfolio .imgPort {
+  width: 300px;
+  margin: 20px;
+  height: 370px;
+  overflow: hidden;
+}
+.portFolioImage .flexImgPortfolio .imgPort img {
+  width: 100%;
+  height: auto;
+}
 
 /*# sourceMappingURL=style.css.map */

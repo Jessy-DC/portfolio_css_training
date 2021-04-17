@@ -194,5 +194,48 @@ body {
   .titleSec1 {
     font-size: 25px;
   }
+}
 
+// Section portfolio
+
+
+.titlePortfolio {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 550px){
+  .titlePortfolio {
+    font-size: 25px;
+  }
+}
+
+.divPort {
+  width: 20%;
+}
+
+.portFolioImage {
+  padding-top: 20px;
+  width: 100%;
+  @include flexCenterX;
+  padding-bottom: 100px;
+
+  .flexImgPortfolio {
+    width: 1200px;
+    @include flexCenterX;
+    flex-wrap: wrap;
+
+    .imgPort {
+      width: 300px;
+      margin: 20px;
+      height: 370px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
 }
